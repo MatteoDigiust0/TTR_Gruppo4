@@ -6,7 +6,7 @@ public class Tratta {
     String colore;
     Stazione inizio;
     Stazione fine;
-    Boolean Stazione occupata;
+    Boolean StazioneOccupata;
 
     public Tratta(int lunghezza){   //lunghezza
         this.lunghezza=lunghezza;

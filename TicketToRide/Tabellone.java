@@ -7,44 +7,45 @@ public class Tabellone {
 
     public Tabellone(){
 
-        Stazione []stazioni =new Stazione[38];
+
+        Stazione stazioni[] =new Stazione[38];
 
         stazioni[0].setNome("Vancouver");
         stazioni[1].setNome("Calgary");
-        stazione[2].setNome("Winnipeg");
-        stazione[3].setNome("Sault St.Marie");
-        stazione[4].setNome("Motréal");
-        stazione[5].setNome("Seattle");
-        stazione[6].setNome("Duluth");
-        stazione[7].setNome("Toronto");
-        stazione[8].setNome("Boston");
-        stazione[9].setNome("Portland");
-        stazione[10].setNome("Helena");
-        stazione[11].setNome("Omaha");
-        stazione[12].setNome("Chicago");
-        stazione[13].setNome("Pittsburg");
-        stazione[13].setNome("New York");
-        stazione[14].setNome("San Francisco");
-        stazione[15].setNome("Salt Lake City");
-        stazione[16].setNome("Denver");
-        stazione[17].setNome("Kansas City");
-        stazione[18].setNome("Saint Louis");
-        stazione[19].setNome("Washington");
-        stazione[20].setNome("Las Vegas");
-        stazione[21].setNome("Santa Fe");
-        stazione[22].setNome("Oklahoma City");
-        stazione[23].setNome("Little Rock");
-        stazione[24].setNome("Nashville");
-        stazione[25].setNome("Raleigh");
-        stazione[26].setNome("Los Angeles");
-        stazione[27].setNome("Phoenix");
-        stazione[27].setNome("El Paso");
-        stazione[28].setNome("Dallas");
-        stazione[29].setNome("Atlanta");
-        stazione[30].setNome("Charleston");
-        stazione[31].setNome("Houston");
-        stazione[32].setNome("New Orleans");
-        stazione[32].setNome("Miami");
+        stazioni[2].setNome("Winnipeg");
+        stazioni[3].setNome("Sault St.Marie");
+        stazioni[4].setNome("Motréal");
+        stazioni[5].setNome("Seattle");
+        stazioni[6].setNome("Duluth");
+        stazioni[7].setNome("Toronto");
+        stazioni[8].setNome("Boston");
+        stazioni[9].setNome("Portland");
+        stazioni[10].setNome("Helena");
+        stazioni[11].setNome("Omaha");
+        stazioni[12].setNome("Chicago");
+        stazioni[13].setNome("Pittsburg");
+        stazioni[13].setNome("New York");
+        stazioni[14].setNome("San Francisco");
+        stazioni[15].setNome("Salt Lake City");
+        stazioni[16].setNome("Denver");
+        stazioni[17].setNome("Kansas City");
+        stazioni[18].setNome("Saint Louis");
+        stazioni[19].setNome("Washington");
+        stazioni[20].setNome("Las Vegas");
+        stazioni[21].setNome("Santa Fe");
+        stazioni[22].setNome("Oklahoma City");
+        stazioni[23].setNome("Little Rock");
+        stazioni[24].setNome("Nashville");
+        stazioni[25].setNome("Raleigh");
+        stazioni[26].setNome("Los Angeles");
+        stazioni[27].setNome("Phoenix");
+        stazioni[27].setNome("El Paso");
+        stazioni[28].setNome("Dallas");
+        stazioni[29].setNome("Atlanta");
+        stazioni[30].setNome("Charleston");
+        stazioni[31].setNome("Houston");
+        stazioni[32].setNome("New Orleans");
+        stazioni[32].setNome("Miami");
 
 
 

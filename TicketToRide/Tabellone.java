@@ -48,7 +48,22 @@ public class Tabellone {
         stazioni[32].setNome("Miami");
 
 
+        Tratta tratte[] = new Tratta[83];
 
+        InizializzazioneTratte(tratte, 0, 3, "Vancouver", "Calgary");
+        InizializzazioneTratte(tratte, 1, 2, "vancouver", "Seattle");
+        InizializzazioneTratte(tratte, 2, 4, "Seattle", "Calgary");
+        InizializzazioneTratte(tratte, 3, 6, "Calgary", "Winnipeg");
+        InizializzazioneTratte(tratte, 4, 4, "Calgary", "Helena");
+        InizializzazioneTratte(tratte, 5, 6, "Portland", "Helena");
+        InizializzazioneTratte
+
+
+    }
+
+    public static void InizializzazioneTratte(Tratta tratte[], int i, int lunghezza, String inizio, String fine){
+
+        tratte[i] = new Tratta(lunghezza, inizio, fine);
 
     }
 }

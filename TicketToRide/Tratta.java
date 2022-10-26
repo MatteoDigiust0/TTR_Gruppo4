@@ -32,19 +32,20 @@ public class Tratta {
         return colore;
     }
 
-    public Stazione setInizio(String inizio){   //Inizio
-        this.inizio=inizio;
+    public void setInizio(String inizio){   //Inizio
+        this.inizio.setNome(inizio);
     }
 
-    public Stazione getInizio(){
-        return inizio;
+    public String getInizio(){
+        return inizio.getNome();
     }
 
-    public Stazione setFine(String fine){   //fine
-        this.fine=fine;
+    public void setFine(String fine){   //fine
+        this.fine.setNome(fine);
     }
 
-    public Stazione getFine(){
-        return fine;
+    public String getFine(){
+        return fine.getNome();
     }
+
 }

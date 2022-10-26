@@ -10,8 +10,6 @@ public class CartaObbiettivo extends Carta{
     public CartaObbiettivo(){
 
         super();
-        inizio=new Stazione();
-        fine=new Stazione();
     }
 
     public CartaObbiettivo(Stazione inizio, Stazione fine, int punteggio){
@@ -39,11 +37,11 @@ public class CartaObbiettivo extends Carta{
         this.punteggio=punteggio;
     }
 
-    public Stazione getInizio(){
+    public String getInizio(){
         return inizio.getNome();
     }
 
-    public Stazione getFine(){
+    public String getFine(){
         return fine.getNome();
     }
 

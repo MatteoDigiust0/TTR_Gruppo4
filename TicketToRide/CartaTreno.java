@@ -1,15 +1,15 @@
 package TicketToRide;
 
-public class CartaTratta {
+public class CartaTreno extends Carta{
  
     
     private String colore;
 
-    public CartaTratta(){
-
+    public CartaTreno(){
+        super();
     }
 
-    public CartaTratta(String colore){
+    public CartaTreno(String colore){
 
         this.colore=colore;
     }
@@ -25,7 +25,7 @@ public class CartaTratta {
 
     public Boolean isJolly(){
 
-            if(colore!="jolly")
+            if(colore!="Jolly")
                 return false;
 
             return true;

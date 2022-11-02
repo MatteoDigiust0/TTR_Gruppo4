@@ -50,7 +50,7 @@ public class CartaObbiettivo extends Carta{
     }
 
     public String toString(){
-        return "Tratta "+getInizio()+"-"+getFine()+"; Punteggio "+getPunteggio();
+        return "Tratta "+getInizio()+" - "+getFine()+"; Punteggio "+getPunteggio();
     }
     
 }

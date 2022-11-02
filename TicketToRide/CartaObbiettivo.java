@@ -12,24 +12,21 @@ public class CartaObbiettivo extends Carta{
         super();
     }
 
-    public CartaObbiettivo(Stazione inizio, Stazione fine, int punteggio){
+    public CartaObbiettivo(String inizio, String fine, int punteggio){
 
-        inizio=new Stazione();
-        fine=new Stazione();
-
-        this.inizio=inizio;
-        this.fine=fine;
+        this.inizio.setNome(inizio);
+        this.fine.setNome(fine);
         this.punteggio=punteggio;
     }
 
-    public void setInizio(Stazione inizio){
+    public void setInizio(String inizio){
 
-        this.inizio=inizio;
+        this.inizio.setNome(inizio);
     }
 
-    public void setFine(Stazione fine){
+    public void setFine(String fine){
 
-        this.fine=fine;
+        this.fine.setNome(fine);
     }
 
     public void setPunteggio(int punteggio){

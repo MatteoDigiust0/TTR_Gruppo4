@@ -1,11 +1,13 @@
 package TicketToRide;
 
+import java.util.*;
+
 public class Mazzo{
 
 
     private int tipo;
-    
-    
+    CartaObbiettivo obbiettivo[]=new CartaObbiettivo[30];
+    CartaTreno treno[]=new CartaTreno[110];
 
     public Mazzo(){
 
@@ -14,13 +16,10 @@ public class Mazzo{
     public Mazzo(int tipo){
 
         if(tipo==1){
-            
-            CartaObbiettivo obbiettivo[]=new CartaObbiettivo[30];
+             //inizzializzaObbiettivo(obbiettivo, i, "inizio", "fine", punteggio);  
         }
 
-        if(tipo==2){
-
-            CartaTreno treno[]=new CartaTreno[110];
+        if(tipo==2){        
 
             for(int i=0; i<110; i++){
 
@@ -53,6 +52,29 @@ public class Mazzo{
 
             }
         }
+    }
+
+
+    public void mescolaObbiettivi(){
+
+        List<CartaObbiettivo> listaObbiettivi= Arrays.asList(obbiettivo);
+        Collections.shuffle(listaObbiettivi);
+        listaObbiettivi.toArray(obbiettivo);
+    }
+
+    public void mescolaTreno(){
+
+        List<CartaTreno> listaTreno= Arrays.asList(treno);
+        Collections.shuffle(listaTreno);
+        listaTreno.toArray(treno);
+    }
+
+
+    public void inizializzaObbiettivo(CartaObbiettivo obbiettivo[],int i ,String inizio, String fine, int punteggio ){
+
+        obbiettivo[i].setInizio(inizio);
+        obbiettivo[i].setFine(fine);
+        obbiettivo[i].setPunteggio(punteggio);
     }
 
 }

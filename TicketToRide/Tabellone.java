@@ -95,8 +95,7 @@ public class Tabellone {
         InizializzazioneTratte(tratte, 42, 2, "El Paso", "Santa Fe");
         InizializzazioneTratte(tratte, 43, 6, "El Paso", "Houston");
         InizializzazioneTratte(tratte, 44, 4, "El Paso", "Dallas");
-        InizializzazioneTratte(tratte, 45, )
-
+        InizializzazioneTratte(tratte, 45, 6, "Portland", "Helena");
 
 
 

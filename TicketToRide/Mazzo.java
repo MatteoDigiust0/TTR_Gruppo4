@@ -2,10 +2,7 @@ package TicketToRide;
 
 public class Mazzo{
 
-
     private int tipo;
-    
-    
 
     public Mazzo(){
 
@@ -16,6 +13,8 @@ public class Mazzo{
         if(tipo==1){
             
             CartaObbiettivo obbiettivo[]=new CartaObbiettivo[30];
+
+            //Inizializzare obbiettivi
         }
 
         if(tipo==2){

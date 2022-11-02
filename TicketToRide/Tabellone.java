@@ -56,7 +56,7 @@ public class Tabellone {
         InizializzazioneTratte(tratte, 3, 6, "Calgary", "Winnipeg");
         InizializzazioneTratte(tratte, 4, 4, "Calgary", "Helena");
         InizializzazioneTratte(tratte, 5, 6, "Portland", "Helena");
-        InizializzazioneTratte
+
 
 
     }

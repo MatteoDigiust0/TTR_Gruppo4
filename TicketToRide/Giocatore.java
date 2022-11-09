@@ -9,25 +9,33 @@ public class Giocatore {
     private CartaObbiettivo []carteObbiettivo;
     private CartaTreno []carteTreno;
     private String colore;
+    public int indexCarteTreno;
 
     public Giocatore(){}
-    public Giocatore(String Colore){
+    public Giocatore(String Colore, Mazzo mazzo){
 
         Trenino []treniniDisponibili= new Trenino[45];
         Tratta []trattePrese = new Tratta[83];
         CartaObbiettivo []carteObbiettivo= new CartaObbiettivo[30];
         CartaTreno []carteTreno = new CartaTreno[110];
+        indexCarteTreno = 0;
 
 
 
 
     }
 
-    public static void PescaCartaTreno(int index){
+    public int PescaCartaTreno(CartaTreno carteTreno[], int index, Mazzo mazzo, int indexCarteTrenoPrese){
 
         Scanner input = new Scanner(System.in);
+        int scelta;
 
-        System.out.println("La carta treno pescata è di colore:" Mazzo.treno[index].getColore());
+        System.out.println("La carta treno pescata è di colore:"+ mazzo.getColoreTreno(mazzo.getIndexCarteTreno()));
+        mazzo.setIndexCarteTreno(mazzo.getIndexCarteTreno() + 1);
+
+        carteTreno[indexCarteTrenoPrese] = new CartaTreno(mazzo.getColoreTreno(mazzo.getIndexCarteTreno()));
+
+        return indexCarteTrenoPrese;
     }
 
 }

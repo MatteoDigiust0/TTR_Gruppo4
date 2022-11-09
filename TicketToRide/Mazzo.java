@@ -4,6 +4,12 @@ public class Mazzo{
 
     private int tipo;
 
+
+    CartaObbiettivo obbiettivo[]=new CartaObbiettivo[30];
+    CartaTreno treno[]=new CartaTreno[110];
+
+
+
     public Mazzo(){
 
     }
@@ -11,10 +17,20 @@ public class Mazzo{
     public Mazzo(int tipo){
 
         if(tipo==1){
+
             
             CartaObbiettivo obbiettivo[]=new CartaObbiettivo[30];
 
             //Inizializzare obbiettivi
+
+
+             //inizzializzaObbiettivo(obbiettivo, i, "inizio", "fine", punteggio);  
+ 
+            CartaObbiettivo obbiettivo[]=new CartaObbiettivo[30];
+
+            //Inizializzare obbiettivi
+
+
         }
 
         if(tipo==2){

@@ -29,4 +29,5 @@ public class Giocatore {
 
         System.out.println("La carta treno pescata è di colore:" Mazzo.treno[index].getColore());
     }
+
 }

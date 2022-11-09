@@ -4,10 +4,11 @@ import java.util.*;
 
 public class Mazzo{
 
-    private int tipo;
+    private CartaObbiettivo obbiettivo[]=new CartaObbiettivo[30];
+    private CartaTreno treno[]=new CartaTreno[110];
 
-    CartaObbiettivo obbiettivo[]=new CartaObbiettivo[30];
-    CartaTreno treno[]=new CartaTreno[110];
+    private int indexCarteTreno;
+    private int indexCarteObiettivi;
 
 
     public Mazzo(){
@@ -15,6 +16,10 @@ public class Mazzo{
     }
 
     public Mazzo(int tipo){
+        
+
+        indexCarteTreno = 0;
+        indexCarteObiettivi = 0;
 
         if(tipo==1){
 
@@ -59,6 +64,27 @@ public class Mazzo{
 
             }
         }
+    }
+
+    public int getIndexCarteTreno() {
+        return indexCarteTreno;
+    }
+
+    public int getIndexCarteObiettivi() {
+        return indexCarteObiettivi;
+    }
+
+    public void setIndexCarteTreno(int indexCarteTreno) {
+        this.indexCarteTreno = indexCarteTreno;
+    }
+
+    public void setIndexCarteObiettivi(int indexCarteObiettivi) {
+        this.indexCarteObiettivi = indexCarteObiettivi;
+    }
+
+    public String getColoreTreno(int i){
+
+        return treno[i].getColore();
     }
 
 

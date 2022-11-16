@@ -8,8 +8,13 @@ public class Tratta {
     Stazione fine;
     Boolean StazioneOccupata;
 
-    public Tratta(int lunghezza){   //lunghezza
+    public Tratta(){}
+
+    public Tratta(int lunghezza, String inizio, String fine, String colore){
         this.lunghezza=lunghezza;
+        this.inizio= new Stazione(inizio);
+        this.fine=new Stazione(fine);
+        this.colore=colore;
     }
 
     public void setLunghezza(int lunghezza){
@@ -18,10 +23,6 @@ public class Tratta {
 
     public int getlunghezza(){
         return lunghezza;
-    }
-
-    public Tratta(String colore){   //colore
-        this.colore=colore;
     }
 
     public void setColore(String colore){

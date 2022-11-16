@@ -1,5 +1,5 @@
 
-package TicketToRide;
+package gestione.TicketToRide;
 
 import java.util.*;
 

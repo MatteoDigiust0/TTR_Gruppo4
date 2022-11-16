@@ -1,7 +1,6 @@
 package TicketToRide;
 
-import java.util.Random;
-import java.util.random.*;
+import java.util.Collections;
 
 public class Mazzo{
 
@@ -21,6 +20,16 @@ public class Mazzo{
 
         indexCarteTreno = 0;
         indexCarteObiettivi = 0;
+
+        if(tipo==1){
+
+             //inizzializzaObbiettivo(obbiettivo, i, "inizio", "fine", punteggio);  
+ 
+            CartaObbiettivo obbiettivo[]=new CartaObbiettivo[30];
+
+            //Inizializzare obbiettivi
+
+        }
 
 
             obbiettivo[0].setObbiettivo("Denver", "Pittsburgh", 11);
@@ -93,7 +102,7 @@ public class Mazzo{
             }
 
         }
-    
+    }
 
     public int getIndexCarteTreno() {
         return indexCarteTreno;
@@ -117,34 +126,15 @@ public class Mazzo{
     }
 
 
-    
+    }
+
+
     public void mescolaMazzi(){
 
-        CartaObbiettivo temporaneoO= new CartaObbiettivo();
-        CartaTreno temporaneoT = new CartaTreno();
+        CartaObbiettivo temporaneo= new CartaObbiettivo();
 
-        Random random= new Random();
-
-        //mescola gli obbiettivi
         for(int i=0; i<1000; i++){
 
-            int n_random= random.nextInt(29);
-            int n_random2=random.nextInt(29);
-
-            temporaneoO=obbiettivo[n_random];
-            obbiettivo[n_random]=obbiettivo[n_random2];
-            obbiettivo[n_random2]=temporaneoO;
-        }
-
-        //mescola i treni
-        for(int i=0; i<1000; i++){
-
-            int n_random= random.nextInt(29);
-            int n_random2=random.nextInt(29);
-
-            temporaneoT=treno[n_random];
-            treno[n_random]=treno[n_random2];
-            treno[n_random2]=temporaneoT;
         }
     }
 

@@ -1,4 +1,4 @@
-package TickeToRide;
+package TicketToRide;
 
 import javax.swing.JFrame;
         

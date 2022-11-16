@@ -30,5 +30,9 @@ public class CartaTreno extends Carta{
 
             return true;
     }
+
+    public CartaTreno copiaTreno(){
+        
+    }
     }
 

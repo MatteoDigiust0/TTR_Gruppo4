@@ -47,7 +47,19 @@ public class CartaObbiettivo extends Carta{
     }
 
     public String toString(){
-        return "Tratta "+getInizio()+" - "+getFine()+"; Punteggio "+getPunteggio();
+        return "Tratta "+getInizio()+"-"+getFine()+"; Punteggio "+getPunteggio();
+    }
+
+    public void setObbiettivo(String inizio, String fine, int punteggio){
+
+        this.inizio.setNome(inizio);
+        this.fine.setNome(fine);
+        this.punteggio=punteggio;
+    }
+
+    public CartaObbiettivo copiaObbiettivo(){
+
+        return new CartaObbiettivo(getInizio(), getFine(), punteggio);
     }
     
 }

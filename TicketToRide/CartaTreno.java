@@ -5,6 +5,7 @@ public class CartaTreno extends Carta{
     
     private String colore;
 
+
     public CartaTreno(){
         super();
     }

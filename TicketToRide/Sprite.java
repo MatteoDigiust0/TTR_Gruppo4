@@ -12,6 +12,10 @@ public class Sprite {
     protected boolean visible;
     protected Image image;
 
+    public Sprite (){
+        
+    }
+
     public Sprite(int x, int y) {
 
         this.x = x;

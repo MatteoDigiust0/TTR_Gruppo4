@@ -1,12 +1,13 @@
 package TicketToRide;
 
-public class Tabellone {
+public class Tabellone extends Sprite {
 
     private Stazione []stazioni;        //NStazione = 38;
     private Tratta []tratte;        //NTratte = 83;
 
-    public Tabellone(){
+    public Tabellone(int x, int y){
 
+        super(x, y);
 
         Stazione stazioni[] =new Stazione[38];
 

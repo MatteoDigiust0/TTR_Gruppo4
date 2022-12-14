@@ -1,6 +1,6 @@
 package TicketToRide;
 
-public class Tratta {
+public class Tratta extends Sprite {
 
     int lunghezza;
     String colore;
@@ -8,14 +8,24 @@ public class Tratta {
     Stazione fine;
     Boolean StazioneOccupata;
 
-    public Tratta(){}
 
-    public Tratta(int lunghezza, String inizio, String fine, String colore){
+    public Tratta(){
+
+        super();
+    }
+
+
+    public Tratta(Stazione inizio, Stazione fine, int lunghezza, String colore, int x, int y){
+
+        super(x, y);
+
         this.lunghezza=lunghezza;
-        this.inizio= new Stazione(inizio);
-        this.fine=new Stazione(fine);
+        this.inizio= inizio;
+        this.fine=fine;
         this.colore=colore;
     }
+
+   
 
     public void setLunghezza(int lunghezza){
         this.lunghezza=lunghezza;

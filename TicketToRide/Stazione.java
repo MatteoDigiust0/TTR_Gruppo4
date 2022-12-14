@@ -1,12 +1,17 @@
 package TicketToRide;
 
-public class Stazione {
+public class Stazione extends Sprite {
 
     String nome;
 
-    public Stazione(){}  
-    
-    public Stazione (String nome){
+    public Stazione(){
+
+        super();
+    }
+
+ 
+    public Stazione (String nome, int x, int y){
+        super(x, y);
         this.nome=nome;
     }
 

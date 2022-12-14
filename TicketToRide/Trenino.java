@@ -1,12 +1,16 @@
 package TicketToRide;
 
-public class Trenino {
+public class Trenino extends Sprite{
 
     String colore;
 
-    public Trenino(){}
+    public Trenino(){
 
-    public Trenino(String colore){
+        super();
+    }
+
+    public Trenino (String colore, int x, int y){
+        super (x, y);
         this.colore=colore;
     }
     

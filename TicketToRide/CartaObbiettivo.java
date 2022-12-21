@@ -1,6 +1,6 @@
 package TicketToRide;
 
-public class CartaObbiettivo extends Carta{
+public class CartaObbiettivo extends Sprite{
 
     private Stazione inizio=new Stazione();
     private Stazione fine=new Stazione();
@@ -12,7 +12,9 @@ public class CartaObbiettivo extends Carta{
         super();
     }
 
-    public CartaObbiettivo(String inizio, String fine, int punteggio){
+    public CartaObbiettivo(String inizio, String fine, int punteggio, int x, int y){
+
+        super(x, y);
 
         this.inizio.setNome(inizio);
         this.fine.setNome(fine);
@@ -59,7 +61,7 @@ public class CartaObbiettivo extends Carta{
 
     public CartaObbiettivo copiaObbiettivo(){
 
-        return new CartaObbiettivo(getInizio(), getFine(), punteggio);
+        return new CartaObbiettivo(getInizio(), getFine(), punteggio, x, y);
     }
     
 }

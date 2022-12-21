@@ -1,6 +1,6 @@
 package TicketToRide;
 
-public class CartaTreno extends Carta{
+public class CartaTreno extends Sprite{
  
     
     private String colore;
@@ -10,7 +10,9 @@ public class CartaTreno extends Carta{
         super();
     }
 
-    public CartaTreno(String colore){
+    public CartaTreno(String colore, int x, int y){
+
+        super(x, y);
 
         this.colore=colore;
     }
@@ -34,6 +36,7 @@ public class CartaTreno extends Carta{
 
     public CartaTreno copiaTreno(){
         
+        return new CartaTreno(colore, x, y);
     }
     }
 

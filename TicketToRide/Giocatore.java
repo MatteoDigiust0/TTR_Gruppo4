@@ -12,6 +12,7 @@ public class Giocatore {
     public int indexCarteTreno;
 
     public Giocatore(){}
+    
     public Giocatore(String Colore, Mazzo mazzo){
 
         Trenino []treniniDisponibili= new Trenino[45];

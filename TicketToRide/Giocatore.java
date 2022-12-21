@@ -20,10 +20,25 @@ public class Giocatore {
         CartaTreno []carteTreno = new CartaTreno[110];
         indexCarteTreno = 0;
 
-
-
-
     }
+
+
+    public void setColore(String colore){
+        this.colore=colore;
+    }
+
+    public String getColore(){
+        return colore;
+    }
+
+    public void setIndexcarteTreno(int indexCarteTreno){
+        this.indexCarteTreno=indexCarteTreno;
+    }
+
+    public int indexCarteTreno(){
+        return indexCarteTreno;
+    }
+    
 
     public int PescaCartaTreno(CartaTreno carteTreno[], int index, Mazzo mazzo, int indexCarteTrenoPrese){
 

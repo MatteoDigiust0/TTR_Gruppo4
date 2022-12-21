@@ -1,9 +1,8 @@
 package TicketToRide;
 
 import java.util.Random;
-import java.util.random.*;
 
-public class Mazzo{
+public class Mazzo extends Sprite{
 
     private CartaObbiettivo obbiettivo[]=new CartaObbiettivo[30];
     private CartaTreno treno[]=new CartaTreno[110];
@@ -13,11 +12,18 @@ public class Mazzo{
 
 
     public Mazzo(){
-
+        super();
     }
 
-    public Mazzo(int tipo){
+    public Mazzo(int x, int y){
+
+        super(x, y);
         
+        for(int i=0; i<30; i++)
+        obbiettivo[i]=new CartaObbiettivo();
+        
+        for(int i=0; i<110; i++)
+        treno[i] = new CartaTreno();
 
         indexCarteTreno = 0;
         indexCarteObiettivi = 0;
@@ -56,10 +62,6 @@ public class Mazzo{
 
             
 
-
-
-
-            CartaTreno treno[]=new CartaTreno[110];
 
             for(int i=0; i<110; i++){
 

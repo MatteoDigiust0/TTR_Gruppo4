@@ -12,6 +12,7 @@ public class Giocatore {
     public int indexCarteTreno;
 
     public Giocatore(){}
+    
     public Giocatore(String Colore, Mazzo mazzo){
 
         Trenino []treniniDisponibili= new Trenino[45];
@@ -19,9 +20,6 @@ public class Giocatore {
         CartaObbiettivo []carteObbiettivo= new CartaObbiettivo[30];
         CartaTreno []carteTreno = new CartaTreno[110];
         indexCarteTreno = 0;
-
-
-
 
     }
 

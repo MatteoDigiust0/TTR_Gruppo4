@@ -46,9 +46,12 @@ public class ContenutoGrafico extends JPanel implements ActionListener{
 
         Graphics2D g2d = (Graphics2D) g;
 
-        g2d.drawImage(spaceShip.getImage(), spaceShip.getX(),
+        g2d.drawImage(MainUI.getGiocatore()., spaceShip.getX(),
                 spaceShip.getY(), this);
     }
+
+
+
 
     @Override
     public void actionPerformed(ActionEvent e) {

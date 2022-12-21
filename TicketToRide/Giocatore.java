@@ -12,7 +12,7 @@ public class Giocatore {
     public int indexCarteTreno;
 
     public Giocatore(){}
-    
+
     public Giocatore(String Colore, Mazzo mazzo){
 
         Trenino []treniniDisponibili= new Trenino[45];
@@ -21,6 +21,27 @@ public class Giocatore {
         CartaTreno []carteTreno = new CartaTreno[110];
         indexCarteTreno = 0;
 
+    }
+
+
+    public Trenino[] getTreniniDisponibili(){
+
+        return treniniDisponibili;
+    }
+
+    public Tratta[] getTrattePrese(){
+        
+        return trattePrese;
+    }
+
+    public CartaObbiettivo[] getCarteObiettivo(){
+
+        return carteObbiettivo;
+    }
+
+    public CartaTreno[] getCartatreno(){
+
+        return carteTreno;
     }
 
 

@@ -46,8 +46,18 @@ public class ContenutoGrafico extends JPanel implements ActionListener{
 
         Graphics2D g2d = (Graphics2D) g;
 
-        g2d.drawImage(MainUI.getGiocatore()., spaceShip.getX(),
-                spaceShip.getY(), this);
+        //disegna tutte le immagini delle carte treno in possesso del giocatore
+        for(int i=0; i<MainUI.getGiocatore().getCartatreno().length; i++ )
+        g2d.drawImage(MainUI.getGiocatore().getCartatreno()[i].getImage(), MainUI.getGiocatore().getCartatreno()[i].getX(),
+        MainUI.getGiocatore().getCartatreno()[i].getY(), this);
+
+        //disegna tutte le carte obiettivo del giocatore
+        for(int i=0; i<MainUI.getGiocatore().getCarteObiettivo().length; i++ )
+        g2d.drawImage(MainUI.getGiocatore().getCarteObiettivo()[i].getImage(), MainUI.getGiocatore().getCarteObiettivo()[i].getX(),
+        MainUI.getGiocatore().getCarteObiettivo()[i].getY(), this);
+
+        //disegna il trenino del giocatore
+       g2d.drawImage(MainUI.getGiocatore().getTreniniDisponibili()[0].getImage(), MainUI.getGiocatore().getTreniniDisponibili()[0].getX(), MainUI.getGiocatore().getTreniniDisponibili()[0].getY(), this);
     }
 
 
